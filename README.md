@@ -1,0 +1,31 @@
+### Setup & run instructions
+
+### Live deployment URLs for the frontend and backend
+Frontend: https://patient-assistant-dashboard-frontend.onrender.com
+Backend: https://patient-assistant-dashboard-backend.onrender.com
+API Service: https://patient-assistant-dashboard-ai-chat.onrender.com
+
+### Environment variables
+Create or update .env file for each folder
+
+#### Frontend Environment (frontend/.env)
+VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
+
+#### Backend Environment (backend/.env)
+DATABASE_URL=postgresql://patient_assistant_db_user:fGdoMw36RSXXpLY0QPXzGt420Ppmzt5P@dpg-d69v4h56ubrc73aqlejg-a.oregon-postgres.render.com/patient_assistant_db
+JWT_EXPIRES_IN=1h
+JWT_ACCESS_TOKEN_SECRET=9f2c8d1a7b3f4e8c9d2f1a0b7c6e5d4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8
+AI_CLIENT_ENDPOINT_URL=http://localhost:8000/generate
+
+#### AI Service Environment (backend/.env)
+OPENAI_API_KEY=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
+
+### Architecture overview
+
+
+### AI usage disclosure (which parts were AI-assisted)
+- AI Service was generated from CHAT GPT to generate response to patient question
+- Python FastAPI chat service logic
+- Node JS boilerplate for route, authenticated, middleware and etc
+- React components boilerplate for components and redux
+- AI was used as a reference tool for documentation lookup, and faster iteration during development.
