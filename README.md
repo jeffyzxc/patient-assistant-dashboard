@@ -34,3 +34,18 @@ VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
 - Node JS boilerplate for route, authenticated, middleware and etc
 - React components boilerplate for components and redux
 - AI was used as a reference tool for documentation lookup, and faster iteration during development.
+
+### Schema design & indexing choices
+
+### Authentication & security design
+
+### AI service architecture
+The AI feature is implemented as a separate service using **Python FastAPI**. 
+
+React Frontend → Node Backend → FastAPI AI Service → OpenAI API 
+
+The backend forwards chat requests to the AI service, which generates and returns an AI response, which is returned to the backend and stored in the database.
+
+(Refer to the architecture diagram above.)
+
+### Scaling considerations & trade-offs
