@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Button,
@@ -7,7 +8,7 @@ import {
   Paper,
   Avatar,
   Link,
-  Alert
+  Alert,
 } from "@mui/material";
 import DentalIcon from "@mui/icons-material/MedicalServices";
 import { useNavigate } from "react-router-dom";
@@ -60,8 +61,11 @@ const LoginPage: React.FC = () => {
         </Typography>
 
         <Box component="form" onSubmit={formik.handleSubmit} sx={{ mt: 1 }}>
-
-          {serverError && <Alert severity="error">{serverError}</Alert>}
+          {serverError && (
+            <Alert severity="error" sx={{ mb: 2 }}>
+              {serverError}
+            </Alert>
+          )}
 
           <TextField
             label="Email"

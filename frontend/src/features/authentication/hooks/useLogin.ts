@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { login } from "../../../store/authSlice";
 import type { LoginRequest } from "../interfaces/auth.interfaces";
-import type { AppDispatch } from "../../../store/index"; 
+import type { AppDispatch } from "../../../store/index";
 
 type UseLoginOptions = {
   onSuccess?: () => void;
@@ -34,13 +34,12 @@ export const useLogin = (options?: UseLoginOptions) => {
       try {
         setServerError(null);
         await dispatch(login(values)).unwrap();
-
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        options?.onSuccess?.();
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
-        setServerError(err || "Login failed");
+        setServerError(err || "Login failed"); 
       } finally {
         setSubmitting(false);
-        options?.onSuccess?.();
       }
     },
   });
