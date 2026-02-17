@@ -1,18 +1,39 @@
 ## Patient Assistant Dashboard
 A overview of the setup, deployment, and architecture of the Patient Assistant project.
 
-## Setup & run instructions
-1. Clone the reponsitory
-    - Run: git clone: https://github.com/jeffyzxc/patient-assistant-dashboard.git
-3. Backend setup and Frontend setup. 
-   - In root folder run: npm run install:all
-4. AI Service Setup. 
-   - In ai-service folder run pip install -r requirements.txt
-3. Configure All the environment variables
-4. Run Backend and frontend
-   - In root folder, npm run start
-5. Run AI Service. 
-    - In ai-service folder run: python -m uvicorn app.main:app --reload
+## Setup & Run Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/jeffyzxc/patient-assistant-dashboard.git
+   cd patient-assistant-dashboard
+   ```
+2. **Install Backend and Frontend dependencies**
+   ```bash
+   npm run install:all
+   ```
+3. **AI Service Setup**
+   ```bash
+   cd ai-service
+   pip install --user -r requirements.txt
+   ```
+   > Using `--user` avoids permission issues on Windows.
+4. **Configure environment variables**
+   * Create a `.env` file in both the root and `ai-service` folders if needed.
+   * Add your API keys and other required variables.
+5. **Run Backend and Frontend**
+   ```bash
+   cd ..  # back to root folder
+   npm run start
+   ```
+6. **Run AI Service**
+   ```bash
+   cd ai-service
+   python -m uvicorn main:app --reload
+   ```
+   
+### Notes / Tips
+* Run PowerShell or CMD as dministrator if you encounter permission errors when installing packages or running uvicorn.
 
 ## Live deployment URLs for the frontend and backend
 - Frontend: https://patient-assistant-dashboard-frontend.onrender.com
