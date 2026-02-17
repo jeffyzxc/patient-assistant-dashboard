@@ -31,7 +31,7 @@ const PatientDashboard: React.FC = () => {
   };
 
   const handleToastClose = (
-    event?: React.SyntheticEvent | Event,
+    _: React.SyntheticEvent | Event,
     reason?: string
   ) => {
     if (reason === "clickaway") return;
