@@ -36,14 +36,11 @@ VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
 - AI was used as a reference tool for documentation lookup, and faster iteration during development.
 
 ### Schema design & indexing choices
+<img width="631" height="501" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/c3e8f784-220d-4283-b72f-98935c2972d0" />
 
 ### Authentication & security design
 
 ### AI service architecture
-The AI feature is implemented as a separate service using **Python FastAPI**. 
-
-React Frontend → Node Backend → FastAPI AI Service → OpenAI API 
-
 The backend forwards chat requests to the AI service, which generates and returns an AI response, which is returned to the backend and stored in the database.
 
 (Refer to the architecture diagram above.)
