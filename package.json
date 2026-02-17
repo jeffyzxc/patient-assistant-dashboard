@@ -6,7 +6,7 @@
     "start:frontend": "npm --prefix frontend start",
     "start:backend": "npm --prefix backend start",
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
-    "install:all": "npm install --prefix frontend && npm install --prefix backend",
+    "install:all": "npm install && npm install --prefix frontend && npm install --prefix backend",
     "lint:frontend": "eslint \"frontend/src/**/*.{js,jsx,ts,tsx}\"",
     "lint:backend": "eslint \"backend/**/*.{js,ts}\"",
     "lint": "npm run lint:frontend && npm run lint:backend",
