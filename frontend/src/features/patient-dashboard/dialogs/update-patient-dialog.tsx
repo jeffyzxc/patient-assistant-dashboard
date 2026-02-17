@@ -84,7 +84,7 @@ export const UpdatePatientDialog: React.FC<UpdatePatientDialogProps> = ({
             />
 
             <TextField
-              label="DOB"
+              label="Date Of Birth"
               name="DOB"
               type="date"
               fullWidth
