@@ -5,7 +5,7 @@ A overview of the setup, deployment, and architecture of the Patient Assistant p
 1. Clone the reponsitory
     - Run: git clone: https://github.com/jeffyzxc/patient-assistant-dashboard.git
 3. Backend setup and Frontend setup. 
-   - In root folder run: npm install:all
+   - In root folder run: npm run install:all
 4. AI Service Setup. 
    - In ai-service folder run pip install -r requirements.txt
 3. Configure All the environment variables
