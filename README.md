@@ -70,7 +70,7 @@ VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
 <img width="631" height="501" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/c3e8f784-220d-4283-b72f-98935c2972d0" />
 
 For Improvements: 
-- to add ai_response field to store the AI-generated reply separately from the user message
+- to add ai_response field in Chat Message Table to store the AI-generated reply together with the user message.
 
 ## Authentication & security design
 JWT-based authentication for stateless sessions
