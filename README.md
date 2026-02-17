@@ -100,4 +100,4 @@ The backend forwards chat requests to the AI service, which generates and return
 - Indexing for faster reads, better query performance.
 - Vertical scaling
 #### Tradeoffs 
-- Since the project is currently small adding complex scaling infrastructure (horizontal scaling, caching) was not necessary and would increase development and maintenance overhead.
+- Since the project is currently small adding complex scaling infrastructure (vertical/horizontal scaling, caching, and etc) was not necessary and would increase development and maintenance overhead.
