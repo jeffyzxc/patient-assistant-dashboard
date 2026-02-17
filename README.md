@@ -56,7 +56,7 @@ JWT-based authentication for stateless sessions
 
 ### Authentication 
 - Login flow: User submits email/password -> Node backend check credentials -> Returns access token and user information
-- Tokens is stored in local storage
+- Tokens is stored in local storage and attach to every request
 
 ### Security Measures
 - Password hashing: bcrypt (salted, slow hash)
