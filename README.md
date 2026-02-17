@@ -62,7 +62,7 @@ VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
 ## AI usage disclosure (which parts were AI-assisted)
 - AI Service was generated from CHAT GPT to generate response to patient question
 - Python FastAPI chat service logic
-- Node JS boilerplate for route, authenticated, middleware and etc
+- Node JS boilerplate for route, authentication, middleware and etc
 - React components boilerplate for components and redux
 - AI was used as a reference tool for documentation lookup, and faster iteration during development.
 
