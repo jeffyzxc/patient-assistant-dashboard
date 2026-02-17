@@ -27,8 +27,6 @@ export const PatientController = {
     try {
       const patientId = Number(req.params.id);
 
-      await emailPatientValidator(req.body.email);
-
       const updatedPatient = await patientService.update(patientId, req.body)
       res.json(updatedPatient[1][0])
     } catch (error) {
