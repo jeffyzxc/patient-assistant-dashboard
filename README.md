@@ -62,7 +62,7 @@ JWT-based authentication for stateless sessions
 - Password hashing: bcrypt (salted, slow hash)
 - Rate limiting for API endpoints to prevent abuse
 - Environment variables for secrets
-- Cors - for this project is set it to * for now
+- Cors - for this project is set it to ***all*** for now
 
 ## AI service architecture
 The backend forwards chat requests to the AI service, which generates and returns an AI response, which is returned to the backend and stored in the database.
