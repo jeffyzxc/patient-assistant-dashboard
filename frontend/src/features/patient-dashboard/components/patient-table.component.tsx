@@ -44,7 +44,7 @@ export const PatientsTable: React.FC<PatientsTableProps> = ({ onEdit, onDelete, 
             <TableCell>Name</TableCell>
             <TableCell>Email</TableCell>
             <TableCell>Phone</TableCell>
-            <TableCell>DOB</TableCell>
+            <TableCell>Date of Birth</TableCell>
             <TableCell>Medical Notes</TableCell>
             <TableCell align="center">Actions</TableCell>
           </TableRow>
