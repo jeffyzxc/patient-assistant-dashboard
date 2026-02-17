@@ -2,6 +2,17 @@
 A overview of the setup, deployment, and architecture of the Patient Assistant project.
 
 ### Setup & run instructions
+1. Clone the reponsitory
+    git clone https://github.com/jeffyzxc/patient-assistant-dashboard.git
+2. Backend setup and Frontend setup. In root folder run
+   - npm install:all
+3. AI Service Setup. In ai-service folder run
+   - pip install -r requirements.txt
+3. Configure All the environment variables
+4. Run Backend and frontend
+   - In root folder, npm run start
+5. Run AI service
+    - python -m uvicorn app.main:app --reload
 
 ### Live deployment URLs for the frontend and backend
 - Frontend: https://patient-assistant-dashboard-frontend.onrender.com
@@ -24,7 +35,6 @@ VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
 - OPENAI_API_KEY=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
 
 ### Architecture overview
-
 <img width="1245" height="352" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/10c41f06-da82-43db-b525-b4ad6b05551f" />
 
 
@@ -42,10 +52,27 @@ For Improvements:
 - to add ai_response field to store the AI-generated reply separately from the user message
 
 ### Authentication & security design
+JWT-based authentication for stateless sessions
+
+## Authentication 
+Login flow: User submits email/password -> Node backend check credentials -> Returns access token and user information
+Tokens is stored in local storage
+
+## Security Measures
+Password hashing: bcrypt (salted, slow hash)
+Rate limiting for API endpoints to prevent abuse
+Environment variables for secrets
+Cors - for this project is set it to * for now
 
 ### AI service architecture
 The backend forwards chat requests to the AI service, which generates and returns an AI response, which is returned to the backend and stored in the database.
 
 (Refer to the architecture diagram above.)
 
-### Scaling considerations & trade-offs
+### Scaling considerations & trade-offs 
+## Frontend
+- Lazy loading and code spliting for faster intial load
+
+## Backend and Database
+- Redis to cache database queries or AI responses to reduce repeated expensive operations
+- Indexing for faster reads, better query performance.
