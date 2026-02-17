@@ -19,7 +19,7 @@ An overview of the setup, deployment, and architecture of the Patient Assistant 
    ```
    > Using `--user` avoids permission issues on Windows.
 4. **Configure environment variables**
-   * Create a `.env` file in both the root and `ai-service` folders if needed.
+   * Update or Create a `.env` file in `frotnend`, `backend`, and `ai-service` folders if needed.
    * Add your API keys and other required variables.
 5. **Run Backend and Frontend**
    ```bash
