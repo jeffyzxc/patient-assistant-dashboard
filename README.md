@@ -38,7 +38,7 @@ An overview of the setup, deployment, and architecture of the Patient Assistant 
 ## Live deployment URLs for the frontend and backend
 - Frontend: https://patient-assistant-dashboard-frontend.onrender.com
 - Backend: https://patient-assistant-dashboard-backend.onrender.com
-- API Service: https://patient-assistant-dashboard-ai-chat.onrender.com
+- AI Service: https://patient-assistant-dashboard-ai-chat.onrender.com
 
 ## Environment variables
 Create or update .env file for each folder
