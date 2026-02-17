@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit';
-import api from '../../../config/api';
 import type { AIChatResponse, ChatMessage, SendMessageRequest } from '../interfaces/chat.interface';
 import { getChatHistory, sendMessage as sendMessageAPI } from '../api/chat.api'
 

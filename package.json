@@ -6,9 +6,19 @@
     "start:frontend": "npm --prefix frontend start",
     "start:backend": "npm --prefix backend start",
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
-    "install:all": "npm install --prefix frontend && npm install --prefix backend"
+    "install:all": "npm install --prefix frontend && npm install --prefix backend",
+    "lint:frontend": "eslint \"frontend/src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:backend": "eslint \"backend/**/*.{js,ts}\"",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:fix:frontend": "eslint \"frontend/src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:fix:backend": "eslint \"backend/**/*.{js,ts}\" --fix",
+    "lint:fix": "npm run lint:fix:frontend && npm run lint:fix:backend"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "eslint": "^10.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1"
   }
 }
