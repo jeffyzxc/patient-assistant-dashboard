@@ -98,5 +98,6 @@ The backend forwards chat requests to the AI service, which generates and return
 ### Backend and Database
 - Redis to cache database queries or AI responses to reduce repeated expensive operations 
 - Indexing for faster reads, better query performance.
+- Vertical scaling
 #### Tradeoffs 
 - recommended for high traffic scenarios.
