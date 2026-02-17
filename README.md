@@ -55,14 +55,14 @@ For Improvements:
 JWT-based authentication for stateless sessions
 
 ## Authentication 
-Login flow: User submits email/password -> Node backend check credentials -> Returns access token and user information
-Tokens is stored in local storage
+- Login flow: User submits email/password -> Node backend check credentials -> Returns access token and user information
+- Tokens is stored in local storage
 
 ## Security Measures
-Password hashing: bcrypt (salted, slow hash)
-Rate limiting for API endpoints to prevent abuse
-Environment variables for secrets
-Cors - for this project is set it to * for now
+- Password hashing: bcrypt (salted, slow hash)
+- Rate limiting for API endpoints to prevent abuse
+- Environment variables for secrets
+- Cors - for this project is set it to * for now
 
 ### AI service architecture
 The backend forwards chat requests to the AI service, which generates and returns an AI response, which is returned to the backend and stored in the database.
