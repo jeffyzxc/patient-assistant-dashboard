@@ -9,10 +9,7 @@ pnpm-debug.log*
 dist/
 build/
 out/
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*
 .eslintcache
 
 # ==========================
@@ -34,7 +31,6 @@ build/
 env/
 venv/
 ENV/
-.env/
 pip-log.txt
 pip-delete-this-directory.txt
 
