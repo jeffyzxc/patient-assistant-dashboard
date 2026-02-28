@@ -47,13 +47,13 @@ Create or update .env file for each folder
 VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
 
 ### Backend Environment (backend/.env)
-- DATABASE_URL=postgresql://patient_assistant_db_user:fGdoMw36RSXXpLY0QPXzGt420Ppmzt5P@dpg-d69v4h56ubrc73aqlejg-a.oregon-postgres.render.com/patient_assistant_db
+- DATABASE_URL={DATABASE_URL
 - JWT_EXPIRES_IN=1h
-- JWT_ACCESS_TOKEN_SECRET=9f2c8d1a7b3f4e8c9d2f1a0b7c6e5d4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8
-- AI_CLIENT_ENDPOINT_URL=http://localhost:8000/generate
+- JWT_ACCESS_TOKEN_SECRET={ACCESS_SECRET}
+- AI_CLIENT_ENDPOINT_URL={AI_CLIENT_ENDPOINT}
 
 ### AI Service Environment (backend/.env)
-- OPENAI_API_KEY=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
+- OPENAI_API_KEY={OPEN_API_KEY}
 
 ## Architecture overview
 <img width="1245" height="352" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/10c41f06-da82-43db-b525-b4ad6b05551f" />
