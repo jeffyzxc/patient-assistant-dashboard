@@ -44,7 +44,7 @@ An overview of the setup, deployment, and architecture of the Patient Assistant 
 Create or update .env file for each folder
 
 ### Frontend Environment (frontend/.env)
-VITE_API_BASE_URL=https://patient-assistant-dashboard-backend.onrender.com/api
+VITE_API_BASE_URL={VITE_API_BASE_URL}
 
 ### Backend Environment (backend/.env)
 - DATABASE_URL={DATABASE_URL
